@@ -43,7 +43,7 @@
     color: var(--azul);
     padding-bottom: 24px;
     border-bottom: 4px solid var(--azul);
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 
@@ -113,7 +113,7 @@
     }
     
     .menu__lista {
-        column-gap: 10px;
+        column-gap: 15px;
     }
     .menu__link {
         font-size: 14px;
@@ -125,7 +125,22 @@
 }
 
 @media screen and (max-width: 500px) {
-    .menu-icon__lista, .menu__lista {
+    .menu__lista {
         display: none;
-    }    
+    }
+    .menu-icon__lista {
+        column-gap: 0px;
+    }
+
+    .sino {
+        margin-right: 15px;
+    }
+    .pesquisar {
+        margin-right: 15px;
+    }
+
+    .minimizar, .maximizar, .fechar {
+        display: none;
+    }
+        
 }
