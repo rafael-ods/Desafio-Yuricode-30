@@ -1,0 +1,123 @@
+.novidades {
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.novidades__lista {
+    background-color: var(--preto-claro);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 29px 40px;
+    margin-bottom: 40px;
+}
+
+.lista__link {
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.lista__link:hover {
+    color: var(--azul);
+    border-bottom: 4px solid var(--azul);
+    padding-bottom: 23px;
+    transition: .3s ease-in-out;
+}
+
+.ativo {
+    color: var(--azul);
+    padding-bottom: 24px;
+    border-bottom: 4px solid var(--azul);
+}
+
+.box-input {
+    position: relative;
+    display: flex;
+}
+
+.novidades__input {
+    color: var(--branco);
+    background-color: var(--preto-claro);
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    outline: none;
+    width: 100%;
+    padding: 18px 40px;
+}
+
+.novidades__input::placeholder {
+    color: var(--branco);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.icon {
+    color: var(--azul);
+    font-size: 24px;
+    position: absolute;
+    right: 40px;
+    top: 18px;
+}
+
+.novidades__continer__img {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .novidades__continer__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 71px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lista__link {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .novidades__lista {
+        display: none;
+    }
+
+    .novidades__input {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .novidades__input::placeholder {
+        font-size: 16px;
+        line-height: 15px;
+    }
+    
+    .icon {
+        font-size: 18px;
+        right: 15px;
+        top: 20px
+    }
+
+    .novidades__continer__img {
+        gap: 32px;
+        margin-top: 32px;
+    }
+
+    .novidades__continer__img img {
+        width: 100%;
+    }
+}

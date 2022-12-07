@@ -1,0 +1,23 @@
+.rodape {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--preto-claro);
+    padding: 20px 0;
+}
+
+.cabecalho__logo {
+    margin-bottom: 10px;
+}
+
+.rodape__link {
+    color: var(--branco);
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.rodape__link:hover {
+    color: var(--azul);
+    transition: .2s ease-in-out;
+}

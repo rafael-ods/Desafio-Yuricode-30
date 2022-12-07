@@ -1,0 +1,131 @@
+.cabecalho {
+    align-items: center;
+    background-color: var(--preto-claro);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 3rem;
+}
+
+.cabecalho__logo {
+    background: url(../../img/bi_steam.svg) center / cover no-repeat;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+    column-gap: 80px;
+}
+
+.menu__lista {
+    align-items: center;
+    display: flex;
+    column-gap: 40px;
+}
+
+.menu__link {
+    color: var(--branco);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.ativo {
+    color: var(--azul);
+    padding-bottom: 24px;
+    border-bottom: 4px solid var(--azul);
+}
+
+.menu__link:hover {
+    color: var(--azul);
+    padding-bottom: 24px;
+    border-bottom: 4px solid var(--azul);
+    transition: .3s ease-in-out;
+}
+
+
+
+.menu-icon__lista {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
+
+.menu-icon__link {
+    display: inline-block;
+}
+
+.sino {
+    background: url(../../img/Group\ 1416.svg);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.pesquisar {
+    background: url(../../img/message-circle.svg) center / cover no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.perfil {
+    background: url(../../img/Group\ 1417.svg) center / cover no-repeat;
+    width: 72px;
+    height: 40px;
+}
+.minimizar {
+    background: url(../../img/plus.svg) center / cover no-repeat;
+    width: 24px;
+    height: 24px;
+}
+.maximizar {
+    background: url(../../img/Group\ 1418.svg) center / cover no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.fechar {
+    background: url(../../img/x.svg) center / cover no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        column-gap: 25px;
+    }
+    .menu__link {
+        font-size: 16px;
+    } 
+    .menu-icon__lista {
+        column-gap: 20px;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .menu__lista {
+        column-gap: 10px;
+    }
+    .menu__link {
+        font-size: 14px;
+    }
+
+    .menu-icon__lista {
+        column-gap: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu-icon__lista, .menu__lista {
+        display: none;
+    }    
+}
